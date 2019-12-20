@@ -1,3 +1,9 @@
 [build]
-  publish = "public"
+  publish = "frontend/build"
   command = "npm run build"
+  base = "frontend/src"
+  
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
